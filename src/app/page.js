@@ -1,91 +1,90 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
+    <div className="container px-5">
+      
+      <Header />
+
+      <div className="lg:text-right text-center px-6 lg:px-0 mt-3 lg:mt-[200px]">
+        <p className="font-medium text-[20px] lg:text-[30px]">وصولك لمنتجات البناء أسهل</p>
+        <p className="font-medium text-[20px] lg:text-[30px]"> سوق متكامل لإحتياجات مشروعك </p>
+        <p className="font-medium text-[20px] lg:text-[30px]">في المملكة العربية السعودية </p>
+      </div>
+
+      <div className=" lg:mt-[150px]">
+        <div className="flex flex-col lg:flex-row justify-end lg:gap-20">
+        <div className="flex flex-row gap-1 mt-2">
+            <div className="text-right">
+              <h4 className="font-bold text-[18px] lg:text-[25px]">الطلبات الهندسية </h4>
+              <p className="font-normal text-[14px] lg:text-[17px]">إستخراح الكميات و التسعير</p>
+            </div>
+            <div className="bg-[#b9b9b9] rounded-md py-[5px]">
+              <img src="/icons/helmet.png" alt=""/>
+            </div>
+          </div>
+
+
+          <div className="flex flex-row gap-1 mt-2">
+            <div className="text-right">
+              <h4 className="font-bold text-[18px] lg:text-[25px]">طلبات التسعير</h4>
+              <p className="font-normal text-[14px] lg:text-[17px]">أرسل طلباتك لمورديك أسرع </p>
+            </div>
+            <div className="bg-[#b9b9b9] rounded-md py-[5px]">
+              <img className="w-[70px] h-[58px]" src="/icons/icon-2.png" alt=""/>
+            </div>
+          </div>
+
+          <div className="flex flex-row  gap-1 mt-2">
+            <div className="text-right">
+              <h4 className="font-bold text-[18px] lg:text-[25px]">سوق البناء </h4>
+              <p className="font-normal text-[14px] lg:text-[17px]">تسوق منتجات البناء </p>
+            </div>
+            <div className="bg-[#b9b9b9] rounded-md py-[5px]">
+              <img className="w-[70px] h-[58px]" src="/icons/icon3.png" alt=""/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col lg:flex-row lg:justify-between lg:mt-6">
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+          <img className="lg:w-[620px] lg:h-[480px]" src="/icons/icon4.png" alt=""/>
+        </div>
+
+        <div>
+          <div className="text-right mt-[65px]">
+            <p className="font-semibold">هل أنت مورد أو مصع </p>
+            <p className="font-semibold">تطمح للوصول لأسواقى حديدة </p>
+          </div>
+
+          <div className="flex flex-row text-right justify-end mt-9 gap-2">
+            <img className="lg:w-[18px] lg:h-[20px]" src="/icons/lonceng.png" alt=""/>
+            <p>سجل إهتمامك </p>
+          </div>
+
+          <div>
+            <form className="flex flex-col" action="">
+              <div className="mt-3">
+                <input type="text" placeholder="أسمك أو إسسم النشاط التجاري " className="w-full lg:w-[270px] lg:h-[40px] p-4 text-black bg-[#ffffff] rounded-lg placeholder-black text-center font-normal text-xs" />
+              </div>
+              <div className="mt-3">
+                <input type="text" placeholder="رقم جوالك " className="w-full lg:w-[270px] lg:h-[40px] p-4 text-black bg-[#ffffff] rounded-lg placeholder-black text-center font-normal text-xs" />
+              </div>
+
+              <div className="mt-3">
+                <button className="bg-[#151515] w-full lg:w-[270px] h-[35px] rounded-md text-[#fdfeff] font-normal text-xs">أرسل</button>
+              </div>
+
+              <p className="text-[#2cdca0] text-[14px] text-center mt-4">نقدر إهتماملك. بتعطيلك خبر عند الانطلاف </p>
+              <p className="text-[#db2336] text-[14px] text-center mt-2">يوجد طلب سابق نقدر إهتمامك </p>
+            </form>
+          </div>
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+     <Footer/>
+    </div>
+  );
 }
