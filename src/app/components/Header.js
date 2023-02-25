@@ -1,4 +1,8 @@
-const Header = () => {
+'use client';
+import React from "react";
+
+
+const Header = ({ onOpenModal }) => {
     return (
         <div className="flex flex-row justify-between mt-[150px] relative">
         <div className="flex flex-row gap-3">
@@ -8,7 +12,7 @@ const Header = () => {
           <button className="bg-[#f37121] px-3 py-1 rounded-md text-white">
             اسنثمر معن
           </button>
-          <button className="bg-[#ffe600] px-5 py-1 rounded-md text-black">
+          <button onClick={onOpenModal} className="bg-[#ffe600] px-5 py-1 rounded-md text-black">
             البائعين
           </button>
         </div>
