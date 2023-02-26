@@ -2,14 +2,14 @@
 import React from "react";
 
 
-const Header = ({ onOpenModal }) => {
+const Header = ({ onOpenModal, openInvestModal }) => {
     return (
         <div className="flex flex-row justify-between mt-[150px] relative">
         <div className="flex flex-row gap-3">
           <button className="bg-gray-200 text-gray-600 px-2 py-1 rounded-md">
             ENGLISH
           </button>
-          <button className="bg-[#f37121] px-3 py-1 rounded-md text-white">
+          <button onClick={openInvestModal} className="bg-[#f37121] px-3 py-1 rounded-md text-white">
             اسنثمر معن
           </button>
           <button onClick={onOpenModal} className="bg-[#ffe600] px-5 py-1 rounded-md text-black">

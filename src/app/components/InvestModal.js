@@ -2,7 +2,7 @@
 import React from "react";
 
 
-export default function Modal({ isOpen, onClose, onOverlayClick, children }) {
+export default function InvestModal({ isOpen, onClose, onOverlayClick, children }) {
   if (!isOpen) {
     return null;
   }
