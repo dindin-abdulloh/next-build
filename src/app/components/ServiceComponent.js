@@ -6,8 +6,8 @@ const ServiceComponent = ({isEnglish}) => {
     return (
         <>
             {isEnglish ? 
-                 <div className="flex flex-col lg:flex-row lg:justify-start lg:gap-20">
-                    <div className="flex flex-row justify-center gap-2 mt-2">
+                 <div className="flex flex-col md:flex-row md:justify-center lg:flex-row lg:justify-start lg:gap-20">
+                    <div className="flex flex-row justify-between px-10 md:px-0 md:justify-center gap-2 mt-2">
                         <div className="bg-[#b9b9b9] rounded-md py-[5px]">
                             <img className="w-[70px] h-[58px]" src="/icons/icon3.png" alt=""/>
                         </div>
@@ -17,7 +17,7 @@ const ServiceComponent = ({isEnglish}) => {
                         </div>
                     </div>
 
-                    <div className="flex flex-row justify-center gap-2 mt-2">
+                    <div className="flex flex-row justify-between px-6 md:px-0 md:justify-center gap-2 mt-2">
                         <div className="bg-[#b9b9b9] rounded-md py-[5px]">
                             <img className="w-[70px] h-[58px]" src="/icons/icon-2.png" alt=""/>
                         </div>
@@ -27,7 +27,7 @@ const ServiceComponent = ({isEnglish}) => {
                         </div>
                     </div>
 
-                    <div className="flex flex-row justify-center gap-2 mt-2">
+                    <div className="flex flex-row justify-between px-4 md:px-0 md:justify-center gap-2 mt-2">
                         <div className="bg-[#b9b9b9] rounded-md py-[5px]">
                             <img src="/icons/helmet.png" alt=""/>
                         </div>
@@ -40,8 +40,8 @@ const ServiceComponent = ({isEnglish}) => {
 
                :
 
-               <div className="flex flex-col lg:flex-row lg:justify-end lg:gap-20">
-                    <div className="flex flex-row justify-center gap-1 mt-2">
+               <div className="flex flex-col md:flex-row md:justify-center lg:flex-row lg:justify-end md:gap-8 lg:gap-20 md:mt-5">
+                    <div className="flex flex-row justify-between px-12 md:px-0 md:justify-center gap-1 md:gap-2 mt-2">
                         <div className="text-right">
                             <h4 className="font-bold text-[18px] lg:text-[25px]">الطلبات الهندسية </h4>
                             <p className="font-normal text-[14px] lg:text-[17px]">إستخراح الكميات و التسعير</p>
@@ -52,7 +52,7 @@ const ServiceComponent = ({isEnglish}) => {
                     </div>
        
        
-                    <div className="flex flex-row justify-center gap-1 mt-2">
+                    <div className="flex flex-row justify-between px-12 md:px-0 md:justify-center md:gap-2 gap-1 mt-2">
                         <div className="text-right">
                             <h4 className="font-bold text-[18px] lg:text-[25px]">طلبات التسعير</h4>
                             <p className="font-normal text-[14px] lg:text-[17px]">أرسل طلباتك لمورديك أسرع </p>
@@ -62,7 +62,7 @@ const ServiceComponent = ({isEnglish}) => {
                         </div>
                     </div>
        
-                    <div className="flex flex-row justify-center gap-1 mt-2">
+                    <div className="flex flex-row justify-between px-12 md:px-0 md:justify-center md:gap-2 gap-1 mt-2">
                         <div className="text-right">
                             <h4 className="font-bold text-[18px] lg:text-[25px]">سوق البناء </h4>
                             <p className="font-normal text-[14px] lg:text-[17px]">تسوق منتجات البناء </p>

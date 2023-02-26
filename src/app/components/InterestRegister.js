@@ -36,7 +36,7 @@ const InterestRegister = ({isEnglish}) => {
                         </div>
                     </div>
 
-                    <div className="mt-4">
+                    <div className="mt-4 md:flex md:justify-center">
                          <img className="lg:w-[620px] lg:h-[480px]" src="/icons/icon4.png" alt=""/>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ const InterestRegister = ({isEnglish}) => {
                 :
 
                 <div className="flex flex-col lg:flex-row lg:justify-between lg:mt-6">
-                <div>
+                <div className="md:flex md:justify-center mt-4">
                      <img className="lg:w-[620px] lg:h-[480px]" src="/icons/icon4.png" alt=""/>
                 </div>
 
