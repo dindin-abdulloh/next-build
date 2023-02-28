@@ -67,8 +67,8 @@ export default function Home() {
         <div className='p-[40px]'>
           {isEnglish ?
             <div className={isEnglish ? 'flex flex-row justify-between' : 'flex flex-row gap-4 justify-center'}>
-            <div className='bg-[#d8d8d8] border-b-4 border-[#e8261f] px-2 py-1'>
-              <h2 className='font-bold text-xl'>Build</h2>
+            <div>
+              <img src="/icons/logo-2.png" alt=""/>
             </div>
             <div>
               <h2 className='font-bold text-xl translate-y-2 '>Vendor</h2>
@@ -77,8 +77,8 @@ export default function Home() {
           </div>
           :
           <div className='flex flex-row gap-4 justify-center'>
-            <div className='bg-[#d8d8d8] border-b-4 border-[#e8261f] px-2 py-1'>
-              <h2 className='font-bold text-xl'>Build</h2>
+            <div>
+              <img src="/icons/logo-2.png" alt=""/>
             </div>
             <div>
               <h2 className='font-bold text-xl translate-y-2'>تسجيل البائعين </h2>
@@ -145,16 +145,16 @@ export default function Home() {
               <div>
                 <h2 className='font-bold text-xl translate-y-2'>Invest In</h2>
               </div>
-              <div className='bg-[#d8d8d8] border-b-4 border-[#e8261f] px-2 py-1'>
-                <h2 className='font-bold text-xl'>Build</h2>
-              </div>
+              <div>
+              <img src="/icons/logo-2.png" alt=""/>
+            </div>
             </div>
           :
 
             <div className='flex flex-row gap-4 justify-center'>
-              <div className='bg-[#d8d8d8] border-b-4 border-[#e8261f] px-2 py-1'>
-                <h2 className='font-bold text-xl'>Build</h2>
-              </div>
+              <div>
+              <img src="/icons/logo-2.png" alt=""/>
+            </div>
               <div>
                 <h2 className='font-bold text-xl translate-y-2'>إستثمر ي </h2>
               </div>
